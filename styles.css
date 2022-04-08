@@ -1,3 +1,11 @@
+:root {
+    --sidebar-background-color: rgb(93, 93, 255);
+    --header-background-color: rgb(255, 149, 149);
+    --content-background-color: aquamarine;
+    --grid-item-background-color: pink;
+    --content-padding: 16px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -15,14 +23,115 @@ body {
 }
 
 .sidebar {
-    background-color: rgb(93, 93, 255);
+    background-color: var(--sidebar-background-color);
     grid-row: 1 / span 2;
 }
 
 .header {
-    background-color: rgb(255, 149, 149);
+    background-color: var(--header-background-color);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header .top {
+    display: flex;
+
+    align-items: center;
+    gap: 32px;
+    margin-right: 64px;
+}
+
+.header .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.top>form {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    padding: 16px;
+    gap: 8px;
+    flex: 2;
+}
+
+img.search-icon {
+    justify-self: right;
+}
+
+.search-bar {
+    border-radius: 6px;
+    border: 1px solid brown;
+}
+
+.account-display {
+    
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    flex: 1;
+}
+
+.account-name-top {
+    font-weight: bold;
 }
 
 .content {
-    background-color: aquamarine;
+    background-color: var(--content-background-color);
+}
+
+
+.welcome-avatar {
+    height: 64px;
+}
+
+.account-avatar {
+    height: 48px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    padding: var(--content-padding);
+}
+
+.your-projects {
+    background-color: brown;
+    grid-row: 1 / span 2;
+    padding: var(--content-padding);
+}
+
+.announcements {
+    background-color: rgb(168, 137, 0);
+    padding: var(--content-padding);
+}
+
+.trending {
+    background-color: rgb(26, 23, 194);
+    padding: var(--content-padding);
+}
+
+.trending-container>img {
+    height: 48px;
+}
+
+.your-projects-grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.card {
+    background-color: var(--grid-item-background-color);
+    height: 200px;
+}
+
+.content h2 {
+    margin-bottom: var(--content-padding);
 }

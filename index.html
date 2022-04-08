@@ -9,14 +9,145 @@
     <link rel="stylesheet" href="meyer.css">
 </head>
 <body>
-    <div class="sidebar">
-
-    </div>
+    <nav class="sidebar">
+        <div class="logo-container">
+            <img src="images/view-dashboard.png" alt="Dashboard Logo" class="logo">
+            <h1>Dashboard</h1>
+        </div>
+        <ul class="function-menu">
+            <li><img src="images/home.png" alt="Home">Home</li>
+            <li><img src="images/account-details.png" alt="Profile">Profile</li>
+            <li><img src="images/message-reply.png" alt="Messages">Messages</li>
+            <li><img src="images/clock.png" alt="History">History</li>
+            <li><img src="images/file-document-outline.png" alt="Tasks">Tasks</li>
+            <li><img src="images/account-group.png" alt="Communities">Communities</li>
+        </ul>
+        <ul class="help-menu">
+            <li><img src="images/cog.png" alt="Settings">Settings</li>
+            <li><img src="images/help-circle.png" alt="Support">Support</li>
+            <li><img src="images/shield-check.png" alt="Privacy">Privacy</li>
+        </ul>
+    </nav>
     <div class="header">
-
+        <div class="top">
+            <form action="#">
+                <img src="images/magnify.png" alt="Search icon" class="search-icon">
+                <input type="search" name="search" id="search-bar" class="search-bar">
+            </form>
+            <div class="account-display">
+                <img src="images/bell-ring.png" alt="Alerts" class="alert-image">
+                <img src="images/ninja-avatar.png" alt="Your avatar" class="account-avatar">
+                <p class="account-name-top">Zepper90</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="welcome-container">
+                <img src="images/ninja-avatar.png" alt="Your avatar" class="welcome-avatar">
+                <div class="welcome-message">
+                    <p>Hi there,</p>
+                    <p class="account-name">Zepper90 (@zl90)</p>
+                </div>
+            </div>
+            <div class="upload-button-container">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </div>
     </div>
     <div class="content">
-        
+        <div class="your-projects">
+            <h2>Your Projects</h2>
+            <div class="your-projects-grid">
+                <div class="card">
+                    <p class="card-heading">Web Scraper</p>
+                    <p>This project was built with vanilla JavaScript. It takes input in the form of URLs or RSS links, then scrapes the data and stores it in a MYSQL database.</p>
+                    <img src="images/star-plus-outline.png" alt="Favourite">
+                    <img src="images/eye-plus-outline.png" alt="Follow">
+                    <img src="images/share-variant.png" alt="Share">
+                </div>
+                <div class="card">
+                    <p class="card-heading">Sign-up Form</p>
+                    <p>This project was built with HTML5, CSS3 and the Materialize styling framework. Click to see more...</p>
+                    <img src="images/star-plus-outline.png" alt="Favourite">
+                    <img src="images/eye-plus-outline.png" alt="Follow">
+                    <img src="images/share-variant.png" alt="Share">
+                </div>
+                <div class="card">
+                    <p class="card-heading">Calculator App</p>
+                    <p>This project was built with vanilla Javascript. It performs basic mathematical calculations. Click to use the calculator...</p>
+                    <img src="images/star-plus-outline.png" alt="Favourite">
+                    <img src="images/eye-plus-outline.png" alt="Follow">
+                    <img src="images/share-variant.png" alt="Share">
+                </div>
+                <div class="card">
+                    <p class="card-heading">Chess App</p>
+                    <p>This project was built with Javascript, ReactJS and Node/ExpressJS. It is a fully functional chess game. Click here to play chess against the computer...</p>
+                    <img src="images/star-plus-outline.png" alt="Favourite">
+                    <img src="images/eye-plus-outline.png" alt="Follow">
+                    <img src="images/share-variant.png" alt="Share">
+                </div>
+                <div class="card">
+                    <p class="card-heading">Portfolio Website</p>
+                    <p>This project was built with Javascript, HTML5 and CSS3. It uses the Materialize styling framework for the frontend. Click to see more...</p>
+                    <img src="images/star-plus-outline.png" alt="Favourite">
+                    <img src="images/eye-plus-outline.png" alt="Follow">
+                    <img src="images/share-variant.png" alt="Share">
+                </div>
+                <div class="card">
+                    <p class="card-heading">Bug Tracker</p>
+                    <p>This project was built with Javascript, ReactJS and Node/ExpressJS. It is a fully functional, free, open-source bug-tracker app used by thousands of businesses and millions of individuals. Click to see more...</p>
+                    <img src="images/star-plus-outline.png" alt="Favourite">
+                    <img src="images/eye-plus-outline.png" alt="Follow">
+                    <img src="images/share-variant.png" alt="Share">
+                </div>
+            </div>
+        </div>
+        <div class="announcements">
+            <h2>Announcements</h2>
+            <div class="announcements-container">
+                <section>
+                    <p><strong>Site Maintenance</strong></p>
+                    <p>The dashboard page will be undergoing planned maintenance on 5/4/2022 at 8:00 PM EST. We apologize for any inconvenience caused.</p>
+                    <hr>
+                </section>
+                <section>
+                    <p><strong>Updated Privacy Policy</strong></p>
+                    <p>ZMWEB have updated their privacy policy as of 3/4/2022. Click to see more...</p>
+                    <hr>
+                </section>
+                <section>
+                    <p><strong>Partnership Announcement</strong></p>
+                    <p>ZMWEB has partnered with Google! Click to see what this means for you...</p>
+                    <hr>
+                </section>
+            </div>
+        </div>
+        <div class="trending">
+            <h2>Trending</h2>
+            <div class="trending-container">
+                <img src="images/avatar-1.png" alt="Avatar">
+                <div class="trending-handle">
+                    <p><strong>@laurie_bream</strong></p>
+                    <p>Venture capitalist</p>
+                </div>
+                <img src="images/avatar-3.png" alt="Avatar">
+                <div class="trending-handle">
+                    <p><strong>@lord-bachman</strong></p>
+                    <p>10% owner of PiedPiper</p>
+                </div>
+                <img src="images/avatar-2.png" alt="Avatar">
+                <div class="trending-handle">
+                    <p><strong>@mindy43</strong></p>
+                    <p>Front-end developer</p>
+                </div>
+                <img src="images/avatar-4.png" alt="Avatar">
+                <div class="trending-handle">
+                    <p><strong>@linmin</strong></p>
+                    <p>Tech lead at ZMWEB</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

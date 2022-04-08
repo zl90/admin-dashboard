@@ -4,6 +4,7 @@
     --content-background-color: aquamarine;
     --grid-item-background-color: pink;
     --content-padding: 16px;
+    --button-border-color: blue;
 }
 
 * {
@@ -14,12 +15,13 @@
 
 html, body {
     height: 100%;
+    color: aliceblue;
 }
 
 body {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
 }
 
 .sidebar {
@@ -41,11 +43,6 @@ body {
     margin-right: 64px;
 }
 
-.header .bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
 
 .top>form {
     display: grid;
@@ -60,8 +57,9 @@ img.search-icon {
 }
 
 .search-bar {
-    border-radius: 6px;
+    border-radius: 12px;
     border: 1px solid brown;
+    padding: 0 8px;
 }
 
 .account-display {
@@ -75,8 +73,64 @@ img.search-icon {
     flex: 1;
 }
 
+.account-avatar {
+    height: 48px;
+}
+
 .account-name-top {
     font-weight: bold;
+}
+
+.header .bottom {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    
+}
+
+.welcome-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    gap: 16px;
+}
+
+.welcome-avatar {
+    justify-self: right;
+    height: 48px;
+}
+
+.welcome-message {
+    align-items: left;
+}
+
+.welcome-message>p {
+    font-weight: bold;
+}
+
+.account-name {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.upload-button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 64px;
+    margin-left: 54px;
+}
+
+.upload-button-container>button {
+    width: 80px;
+    padding: 6px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+    border: 1px solid var(--button-border-color);
+    background-color: var(--sidebar-background-color);
+    color: aliceblue;
 }
 
 .content {
@@ -84,13 +138,6 @@ img.search-icon {
 }
 
 
-.welcome-avatar {
-    height: 64px;
-}
-
-.account-avatar {
-    height: 48px;
-}
 
 .content {
     display: grid;

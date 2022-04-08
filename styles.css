@@ -27,6 +27,24 @@ body {
 .sidebar {
     background-color: var(--sidebar-background-color);
     grid-row: 1 / span 2;
+
+    display: grid;
+    grid-template-rows: 1fr 4fr 12fr;
+}
+
+.logo-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.logo {
+    justify-self: center;
+}
+
+.logo-container>h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .header {
@@ -42,7 +60,6 @@ body {
     gap: 32px;
     margin-right: 64px;
 }
-
 
 .top>form {
     display: grid;
@@ -63,9 +80,6 @@ img.search-icon {
 }
 
 .account-display {
-    
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -85,7 +99,6 @@ img.search-icon {
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
-    
 }
 
 .welcome-container {
@@ -137,8 +150,6 @@ img.search-icon {
     background-color: var(--content-background-color);
 }
 
-
-
 .content {
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -170,15 +181,32 @@ img.search-icon {
 .your-projects-grid {
     display: grid;
     gap: 32px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(2, 1fr); */
     grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card {
     background-color: var(--grid-item-background-color);
     height: 200px;
+    padding: 24px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    align-items: center;
+}
+
+.card-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .content h2 {
     margin-bottom: var(--content-padding);
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    justify-items: right;
 }

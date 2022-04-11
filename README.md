@@ -13,7 +13,7 @@ The goal of this project was to gain experience with website layouts using CSS G
 
 The page contains a responsive grid of 'Project cards' nested inside a static dashboard layout, simulating the interface for an administrator of a social media website.
 
-*** Note: Mobile layouts were not a priority for this project. The main focus was the CSS Grid workflow. ***
+#### Note: Mobile layouts were not a priority for this project. The main focus was the CSS Grid workflow.
 
 ### Provided Assets
 
